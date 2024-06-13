@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <span class="toolbar-title">Weather App</span>
+    <span class="spacer"></span>
+    <div class="nav-links">
+      <a mat-button>Home</a>
+      <a mat-button>About</a>
+      <a mat-button>Contact</a>
+    </div>
+    <button mat-icon-button class="mobile-menu-button" (click)="toggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" class="mobile-sidenav">
+      <mat-list>
+        <mat-list-item (click)="sidenav.close()">Home</mat-list-item>
+        <mat-list-item (click)="sidenav.close()">About</mat-list-item>
+        <mat-list-item (click)="sidenav.close()">Contact</mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  

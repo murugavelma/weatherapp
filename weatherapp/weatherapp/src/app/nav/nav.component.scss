@@ -1,0 +1,41 @@
+.toolbar-title {
+    flex: 1;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu-button {
+      display: block;
+    }
+  }
+  
+  .sidenav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the container takes full height */
+  }
+  
+  .mobile-sidenav {
+    width: 250px;
+  }
+  
+  /* Ensure sidenav takes full height */
+  mat-sidenav {
+    height: 100%;
+  }
+  
